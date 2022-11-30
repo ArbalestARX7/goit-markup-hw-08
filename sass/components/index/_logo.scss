@@ -1,0 +1,20 @@
+/* Logo  */
+
+.logo {
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: $logo-fullblack-color;
+}
+
+.page-footer__logo {
+    display: block;
+    margin-bottom: 20px;
+
+    color: $main-white-color;
+}
+
+.logo__part {
+    color: $accent-color;
+}

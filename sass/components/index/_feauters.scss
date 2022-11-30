@@ -1,0 +1,33 @@
+/* Преимущества */
+
+.feauters-main-title {
+  @extend %visually-hidden;
+}
+
+.feauters__thumb {
+  width: 450px;
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+}
+
+.feauters__title {
+  margin-bottom: 10px;
+
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $main-text-color;
+}
+
+.feauters__text {
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.71;
+}

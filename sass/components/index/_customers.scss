@@ -1,0 +1,33 @@
+.customers__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.customers__title {
+  margin-bottom: 30px;
+}
+
+.customer__link {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 210px;
+  height: 92px;
+
+  border: 1px solid $main-logo-color;
+  border-radius: 4px;
+  fill: $main-logo-color;
+  transition: fill $timing-function, border $timing-function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.customer__logo {
+  fill: inherit;
+  width: 106px;
+}

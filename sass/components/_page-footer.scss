@@ -1,0 +1,125 @@
+.page-footer {
+  min-width: 480px;
+  background-color: $sub-bg-color;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.contacts__item {
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 60px;
+  }
+}
+
+.contacts__link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contacts__location {
+  color: $main-white-color;
+}
+
+.join {
+  margin-bottom: 20px;
+
+  color: $main-white-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.socials {
+  margin-bottom: 60px;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+
+  transition: background-color $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.socials-logo {
+  width: 20px;
+  height: 20px;
+  fill: $main-white-color;
+}
+
+.footer-form-lable {
+  margin-bottom: 20px;
+  display: block;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-white-color;
+}
+
+.footer-form-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  padding: 15px 16px;
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 - 16);
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  transition: border $timing-function;
+  background-color: inherit;
+
+  &:focus,
+  &:hover {
+    border: 1px solid $accent-color;
+    outline: $accent-color;
+  }
+}
+
+.footer-btn {
+  @extend %form-btn;
+  padding: 10px 28px;
+}
+
+.footer-form-icon {
+  margin-left: 10px;
+  fill: $main-white-color;
+}
