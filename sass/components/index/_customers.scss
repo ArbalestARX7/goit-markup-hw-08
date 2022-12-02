@@ -1,23 +1,22 @@
 .customers__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
   gap: 30px;
 }
 
-.customers__title {
-  margin-bottom: 30px;
-}
-
-.customer__link {
+.customer__item {
   cursor: pointer;
   display: flex;
   justify-content: center;
-  width: 210px;
-  height: 92px;
-
+  align-items: center;
   border: 1px solid $main-logo-color;
   border-radius: 4px;
   fill: $main-logo-color;
+
+  width: 210px;
+  height: 92px;
   transition: fill $timing-function, border $timing-function;
 
   &:hover,
@@ -25,9 +24,14 @@
     border-color: $accent-color;
     fill: $accent-color;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 
 .customer__logo {
-  fill: inherit;
   width: 106px;
+  height: 60px;
+  fill: inherit;
 }

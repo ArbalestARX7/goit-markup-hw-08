@@ -1,9 +1,10 @@
 .filter {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 50px;
+  width: 326px;
 }
 
 .filter__btn {
@@ -32,8 +33,13 @@
 }
 
 .card-list__item {
-  width: 450px;
+  margin-bottom: 30px;
+  max-width: 450px;
   transition: box-shadow $timing-function;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &:focus,
   &:hover {
@@ -43,6 +49,8 @@
 }
 
 .card-list__title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -70,7 +78,7 @@
   &::before {
     position: absolute;
     display: inline-block;
-    top: 295px;
+    top: 100%;
     transition: transform $timing-function;
 
     content: '';
@@ -81,7 +89,7 @@
   }
 
   .card-list__link:hover &::before {
-    transform: translateY(-295px);
+    transform: translateY(-100%);
   }
 }
 
@@ -90,6 +98,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
+  min-width: 322px;
+  min-height: 168px;
+  padding: 63px 24px;
 
   font-weight: 400;
   font-size: 18px;

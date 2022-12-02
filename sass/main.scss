@@ -2,6 +2,7 @@
 @import './utils/placeholders';
 @import './base/reset';
 @import './base/base';
+@import './utils/visibility';
 @import './components/index/logo';
 @import './components/page-header';
 @import './components/index/hero';
@@ -12,3 +13,5 @@
 @import './components/index/modal';
 @import './components/page-footer';
 @import './components/portfolio/portfolio';
+@import './components/burger-btn';
+@import './components/mobile-menu';

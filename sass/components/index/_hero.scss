@@ -1,18 +1,26 @@
 /* Герой */
 .hero {
-  width: 480px;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  background-color: $sub-bg-color;
+  max-width: 480px;
+  text-align: center;
+  padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
 
-  background-color: $sub-bg-color;
-  text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bgi.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    max-width: 1600px;
+  }
 }
 
 .hero-title {
@@ -24,6 +32,11 @@
   line-height: calc(42 / 26);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  }
 }
 
 .hero-button {
