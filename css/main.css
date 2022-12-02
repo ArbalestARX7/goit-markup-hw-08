@@ -77,7 +77,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -997,7 +997,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   margin-top: 20px;
@@ -1016,6 +1016,11 @@ body {
 .footer-form-field:focus, .footer-form-field:hover {
   border: 1px solid #2196f3;
   outline: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .footer-form-field {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form-field {
