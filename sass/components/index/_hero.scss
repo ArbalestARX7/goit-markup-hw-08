@@ -1,7 +1,7 @@
 /* Герой */
 .hero {
   background-color: $sub-bg-color;
-  max-width: 480px;
+  max-width: 1600px;
   text-align: center;
   padding: 118px 0;
   margin-left: auto;
@@ -13,13 +13,8 @@
   background-position: center;
   background-size: cover;
 
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-
   @media screen and (min-width: 1200px) {
     padding: 200px 0;
-    max-width: 1600px;
   }
 }
 

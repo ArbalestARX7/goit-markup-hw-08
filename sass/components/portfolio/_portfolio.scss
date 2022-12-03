@@ -5,6 +5,11 @@
   gap: 8px;
   margin-bottom: 50px;
   width: 326px;
+
+  @media screen and(min-width:768px) {
+    width: auto;
+    justify-content: center;
+  }
 }
 
 .filter__btn {
@@ -32,6 +37,14 @@
   }
 }
 
+.card-list {
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
 .card-list__item {
   margin-bottom: 30px;
   max-width: 450px;
@@ -45,6 +58,16 @@
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  @media screen and(min-width: 768px) {
+    margin: auto;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin: auto;
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 
