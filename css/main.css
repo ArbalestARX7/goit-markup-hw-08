@@ -238,14 +238,20 @@ body {
   letter-spacing: 0.02em;
   position: relative;
   color: #212121;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav__link:focus, .site-nav__link:hover {
   color: #2196f3;
+  -webkit-filter: drop-shadow(0px 0px 5px #2196f3);
+          filter: drop-shadow(0px 0px 5px #2196f3);
 }
 .site-nav__link--ative {
   color: #2196f3;
+  -webkit-filter: drop-shadow(0px 0px 5px #2196f3);
+          filter: drop-shadow(0px 0px 5px #2196f3);
 }
 
 .site-nav__link::after {
@@ -288,11 +294,15 @@ body {
   color: #757575;
   font-weight: 500;
   letter-spacing: 0.02em;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .auth-nav__link:focus, .auth-nav__link:hover {
   color: #2196f3;
+  -webkit-filter: drop-shadow(0px 0px 5px #2196f3);
+          filter: drop-shadow(0px 0px 5px #2196f3);
 }
 @media screen and (max-width: 1199px) {
   .auth-nav__link {
@@ -658,6 +668,8 @@ body {
 }
 
 .backdrop {
+  padding-left: 15px;
+  padding-right: 15px;
   z-index: 12;
   position: fixed;
   top: 0;
@@ -689,7 +701,7 @@ body {
   transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 90vw;
+  width: 450px;
   height: 609px;
   background-color: #ffffff;
 }
@@ -1169,14 +1181,41 @@ body {
   height: 40px;
   z-index: 11;
 }
+.burger-btn:hover .burger-btn__icon, .burger-btn:focus .burger-btn__icon {
+  fill: #2196f3;
+  -webkit-filter: drop-shadow(0px 0px 5px #2196f3);
+          filter: drop-shadow(0px 0px 5px #2196f3);
+}
+.burger-btn .icon-menu {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .burger-btn .icon-cross {
   opacity: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .burger-btn.is-open .icon-cross {
   opacity: 1;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .burger-btn.is-open .icon-menu {
   opacity: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 @media screen and (min-width: 768px) {
   .burger-btn {
@@ -1185,6 +1224,8 @@ body {
 }
 
 .burger-btn__icon {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 24px;
   height: 16px;
 }
@@ -1219,6 +1260,11 @@ body {
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu__link:hover, .menu__link:focus {
+  color: #2196f3;
 }
 .menu__link--active {
   color: #2196f3;

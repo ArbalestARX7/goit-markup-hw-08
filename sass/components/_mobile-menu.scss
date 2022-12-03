@@ -27,6 +27,13 @@
   letter-spacing: 0.02em;
   color: $main-text-color;
 
+  transition: color $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
   &--active {
     color: $accent-color;
   }
