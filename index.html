@@ -134,8 +134,8 @@
             <li class="doin__item">
               <div class="doing__thumb">
                 <img
-                  class="doing__pic"
-                  src="./images/Desktop-applications.jpg"
+                  srcset="./images/whatdo/key_lg@1x.jpg 1x, ./images/whatdo/key_lg@2x.jpg 2x"
+                  src="./images/key_lg@1x.jpg"
                   alt="Десктопні додатки"
                   width="370"
                   height="294"
@@ -147,9 +147,9 @@
             <li class="doin__item">
               <div class="doing__thumb">
                 <img
-                  class="doing__pic"
-                  src="./images/mobile-applications.jpg"
-                  alt="мобільні додатки"
+                  srcset="./images/whatdo/mob_lg@1x.jpg 1x, ./images/whatdo/mob_lg@2x.jpg 2x"
+                  src="./images/mob_lg@1x.jpg"
+                  alt="Мобільні додатки"
                   width="370"
                   height="294"
                 />
@@ -160,9 +160,9 @@
             <li class="doin__item">
               <div class="doing__thumb">
                 <img
-                  class="doing__pic"
-                  src="./images/design-solutions.jpg"
-                  alt="дизайнерські рішення"
+                  srcset="./images/whatdo/des_lg@1x.jpg 1x, ./images/whatdo/des_lg@2x.jpg 2x"
+                  src="./images/des_lg@1x.jpg"
+                  alt="Дизайнерські рішення"
                   width="370"
                   height="294"
                 />
@@ -180,12 +180,43 @@
           <h2 class="team__title section-title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                class="team__pic"
-                src="./images/Igor-photo.jpg"
-                alt="Фото Ігоря Дем'яненко"
-                width="450"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/igor_lg@1x.webp 1x, ./images/team/igor_lg@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/igor_lg@1x.jpg 1x, ./images/team/igor_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/igor_md@1x.webp 1x, ./images/team/igor_md@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/igor_md@1x.jpg 1x, ./images/team/igor_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/igor_sm@1x.webp 1x, ./images/team/igor_sm@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/igor_sm@1x.jpg 1x, ./images/team/igor_sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="team-avatar"
+                  src="./images/team/igor_md@1x.jpg"
+                  alt="Фото Ігоря Дем'яненко"
+                />
+              </picture>
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__text">Product Designer</p>
               <ul class="socials-list list">
@@ -216,12 +247,43 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__pic"
-                src="./images/Olga-photo.jpg"
-                alt="Фото Ольги Рєпіної"
-                width="450"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/olga_lg@1x.webp 1x, ./images/team/olga_lg@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/olga_lg@1x.jpg 1x, ./images/team/olga_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/olga_md@1x.webp 1x, ./images/team/olga_md@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/olga_md@1x.jpg 1x, ./images/team/olga_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/olga_sm@1x.webp 1x, ./images/team/olga_sm@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/olga_sm@1x.jpg 1x, ./images/team/olga_sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="team-avatar"
+                  src="./images/team/olga_md@1x.jpg"
+                  alt="Фото Ольги Рєпіної"
+                />
+              </picture>
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__text">Frontend Developer</p>
               <ul class="socials-list list">
@@ -252,12 +314,43 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__pic"
-                src="./images/Mikola-Photo.jpg"
-                alt=" Фото Миколи Тарасова"
-                width="450"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/mik_lg@1x.webp 1x, ./images/team/mik_lg@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/mik_lg@1x.jpg 1x, ./images/team/mik_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/mik_md@1x.webp 1x, ./images/team/mik_md@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/mik_md@1x.jpg 1x, ./images/team/mik_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/mik_sm@1x.webp 1x, ./images/team/mik_sm@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/mik_sm@1x.jpg 1x, ./images/team/mik_sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="team-avatar"
+                  src="./images/team/mik_md@1x.jpg"
+                  alt="Фото Миколи Тарасова"
+                />
+              </picture>
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__text">Marketing</p>
               <ul class="socials-list list">
@@ -288,12 +381,43 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__pic"
-                src="./images/Michael-Photo.jpg"
-                alt="Фото Михайла Єрмакова"
-                width="450"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/mih_lg@1x.webp 1x, ./images/team/mih_lg@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/mih_lg@1x.jpg 1x, ./images/team/mih_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/mih_md@1x.webp 1x, ./images/team/mih_md@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/mih_md@1x.jpg 1x, ./images/team/mih_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/mih_sm@1x.webp 1x, ./images/team/mih_sm@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/mih_sm@1x.jpg 1x, ./images/team/mih_sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="team-avatar"
+                  src="./images/team/mih_md@1x.jpg"
+                  alt="Фото Михайла Єрмакова"
+                />
+              </picture>
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__text">UI Designer</p>
               <ul class="socials-list list">

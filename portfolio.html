@@ -39,7 +39,7 @@
           <li class="auth-nav__item">
             <a href="mailto:info@devstudio.com" class="auth-nav__link link">
               <svg class="auth-nav__icon first-icon">
-                <use href="./images/sprites.svg#icon-envelope"></use>
+                <use href="./images/portfolio/sprites.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -47,7 +47,7 @@
           <li class="auth-nav__item">
             <a href="tel:+380961111111" class="auth-nav__link link"
               ><svg class="auth-nav__icon second-icon">
-                <use href="./images/sprites.svg#icon-smartphone"></use>
+                <use href="./images/portfolio/sprites.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
@@ -56,8 +56,8 @@
 
         <button class="burger-btn" type="button" data-menu-button>
           <svg class="burger-btn__icon" aria-label="Перемикач мобільного меню">
-            <use class="icon-menu" href="./images/sprites.svg#icon-menu"></use>
-            <use class="icon-cross" href="./images/sprites.svg#icon-close-menu"></use>
+            <use class="icon-menu" href="./images/portfolio/sprites.svg#icon-menu"></use>
+            <use class="icon-cross" href="./images/portfolio/sprites.svg#icon-close-menu"></use>
           </svg>
         </button>
       </div>
@@ -95,13 +95,34 @@
             <li class="card-list__item">
               <a class="card-list__link link" href=""
                 ><div class="card-list__thumb">
-                  <img
-                    class="card-list__pic"
-                    src="./images/portfolio-images/photo-of-site-technocrack.jpg"
-                    alt="Фото готового сайта"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/technocrjak.jpg    1x,
+                        ./images/portfolio/technocrjak-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/technocrjak-tab.jpg    1x,
+                        ./images/portfolio/technocrjak-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/technocrjak-mob.jpg    1x,
+                        ./images/portfolio/technocrjak-mob-x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/technocrjak.jpg"
+                      alt="відкритий ноутбук"
+                      class="portfolio__card-img img"
+                    />
+                  </picture>
                   <p class="card-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -117,13 +138,35 @@
             <li class="card-list__item">
               <a class="card-list__link link" href=""
                 ><div class="card-list__thumb">
-                  <img
-                    class="card-list__pic"
-                    src="./images/portfolio-images/basketball-match-poster.jpg"
-                    alt="Фото готового сайта"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/basketball.jpg    1x,
+                        ./images/portfolio/basketball-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/basketball-tab.jpg    1x,
+                        ./images/portfolio/basketball-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/basketball-mob.jpg    1x,
+                        ./images/portfolio/basketball-mob-x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/basketball.jpg"
+                      alt="двоє баскетболістів з м'ячем"
+                      width="450"
+                      class="portfolio__card-img img"
+                    />
+                  </picture>
                   <p class="card-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -139,13 +182,35 @@
             <li class="card-list__item">
               <a class="card-list__link link" href=""
                 ><div class="card-list__thumb">
-                  <img
-                    class="card-list__pic"
-                    src="./images/portfolio-images/restaurant-logo.jpg"
-                    alt="Фото готового сайта"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood.jpg    1x,
+                        ./images/portfolio/seafood-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-tab.jpg    1x,
+                        ./images/portfolio/seafood-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/seafood-mob.jpg    1x,
+                        ./images/portfolio/seafood-mob-x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/seafood.jpg"
+                      alt="напис сіфуд ресторан на фоні лосося"
+                      width="450"
+                      class="portfolio__card-img img"
+                    />
+                  </picture>
                   <p class="card-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -161,13 +226,32 @@
             <li class="card-list__item">
               <a class="card-list__link link" href=""
                 ><div class="card-list__thumb">
-                  <img
-                    class="card-list__pic"
-                    src="./images/portfolio-images/photo-of-headphones.jpg"
-                    alt="Фото готового сайта"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/prime.jpg 1x, ./images/portfolio/prime-x2.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-tab.jpg    1x,
+                        ./images/portfolio/prime-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/prime-mob.jpg    1x,
+                        ./images/portfolio/prime-mob-x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/prime.jpg"
+                      alt="навушники"
+                      width="450"
+                      class="portfolio__card-img img"
+                    />
+                  </picture>
                   <p class="card-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -183,13 +267,32 @@
             <li class="card-list__item">
               <a class="card-list__link link" href=""
                 ><div class="card-list__thumb">
-                  <img
-                    class="card-list__pic"
-                    src="./images/portfolio-images/logo-of-boxes-project.jpg"
-                    alt="Фото готового сайта"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/boxes.jpg 1x, ./images/portfolio/boxes-x2.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-tab.jpg    1x,
+                        ./images/portfolio/boxes-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/boxes-mob.jpg    1x,
+                        ./images/portfolio/boxes-mob-x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/boxes.jpg"
+                      alt="дві коробки"
+                      width="450"
+                      class="portfolio__card-img img"
+                    />
+                  </picture>
                   <p class="card-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -205,13 +308,35 @@
             <li class="card-list__item">
               <a class="card-list__link link" href=""
                 ><div class="card-list__thumb">
-                  <img
-                    class="card-list__pic"
-                    src="./images/portfolio-images/photo-of-site-inspiration-has-no-borders.jpg"
-                    alt="Фото готового сайта"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/no-borders.jpg    1x,
+                        ./images/portfolio/no-borders-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/no-borders-tab.jpg    1x,
+                        ./images/portfolio/no-borders-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/no-borders-mob.jpg    1x,
+                        ./images/portfolio/no-borders-mob-x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/no-borders.jpg"
+                      alt="епл монітор з картою світу"
+                      width="450"
+                      class="portfolio__card-img img"
+                    />
+                  </picture>
                   <p class="card-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -227,13 +352,35 @@
             <li class="card-list__item">
               <a class="card-list__link link" href=""
                 ><div class="card-list__thumb">
-                  <img
-                    class="card-list__pic"
-                    src="./images/portfolio-images/magazine-photo.jpg"
-                    width="450"
-                    height="294"
-                    alt="фото журнала"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-edition.jpg    1x,
+                        ./images/portfolio/limited-edition-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-edition-tab.jpg    1x,
+                        ./images/portfolio/limited-edition-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/limited-edition-mob.jpg    1x,
+                        ./images/portfolio/limited-edition-mob-x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/limited-edition.jpg"
+                      alt="розгорнутий журнал"
+                      width="450"
+                      class="portfolio__card-img img"
+                    />
+                  </picture>
                   <p class="card-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -249,13 +396,32 @@
             <li class="card-list__item">
               <a class="card-list__link link" href=""
                 ><div class="card-list__thumb">
-                  <img
-                    class="card-list__pic"
-                    src="./images/portfolio-images/photo-of-tag.jpg"
-                    alt="Фото готового сайта"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/lab.jpg 1x, ./images/portfolio/lab-x2.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-tab.jpg    1x,
+                        ./images/portfolio/lab-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/lab-mob.jpg    1x,
+                        ./images/portfolio/lab-mob-x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/lab.jpg"
+                      alt="бірка з написом лейбел тег"
+                      width="450"
+                      class="portfolio__card-img img"
+                    />
+                  </picture>
                   <p class="card-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -271,13 +437,35 @@
             <li class="card-list__item">
               <a class="card-list__link link" href=""
                 ><div class="card-list__thumb">
-                  <img
-                    class="card-list__pic"
-                    src="./images/portfolio-images/laptop-photo.jpg"
-                    alt="Фото готового сайта"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/business.jpg    1x,
+                        ./images/portfolio/business-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/business-tab.jpg    1x,
+                        ./images/portfolio/business-tab-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/business-mob.jpg    1x,
+                        ./images/portfolio/business-mob-x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/business.jpg"
+                      alt="чоловічі руки друкують за відкритим ноутбуком"
+                      width="450"
+                      class="portfolio__card-img img"
+                    />
+                  </picture>
                   <p class="card-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
