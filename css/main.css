@@ -1079,11 +1079,15 @@ body.modal-open {
       flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 50px;
-  width: 326px;
+}
+@media screen and (max-width: 767px) {
+  .filter {
+    max-width: 326px;
+  }
 }
 @media screen and (min-width: 768px) {
   .filter {
-    width: auto;
+    min-width: 575px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

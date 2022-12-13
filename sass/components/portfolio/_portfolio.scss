@@ -4,10 +4,13 @@
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 50px;
-  width: 326px;
+
+  @media screen and(max-width:767px) {
+    max-width: 326px;
+  }
 
   @media screen and(min-width:768px) {
-    width: auto;
+    min-width: 575px;
     justify-content: center;
   }
 }
